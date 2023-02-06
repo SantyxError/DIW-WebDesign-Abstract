@@ -1,0 +1,48 @@
+.c-main {
+  padding: getPadding(14) getPadding(13);
+  font-family: getFontFamily("fuente1");
+
+  &__card-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: getGap(12);
+    padding: getPadding(10) getPadding(12);
+    margin: getMargin(5) getMargin(2);
+  }
+
+  &__card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: getGap(10);
+    width: 50%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: getGap(6);
+  }
+
+  &__title {
+    color: getColors("negro", 0);
+    font-size: getFontSize("2xl");
+    font-family: getFontFamily("fuente1");
+    font-weight: getFontWeight(8);
+  }
+
+  &__text {
+    font-size: getFontSize("2xl");
+  }
+
+  &__link {
+    font-size: getFontSize("2xl");
+    text-decoration: none;
+  }
+
+  &__img {
+    width: 100px;
+  }
+}

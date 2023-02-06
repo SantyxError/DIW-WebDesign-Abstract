@@ -1,0 +1,53 @@
+.c-button {
+  background-color: getColors("azul", 0);
+  color: getColors("blanco", 0);
+  padding: getPadding(6) getPadding(9);
+  border-radius: getBorderRadius(3);
+  font-family: getFontFamily("fuente1");
+  font-size: getFontSize("2xl");
+  text-decoration: none;
+
+  // @include box-shadow(1);
+
+  &--black {
+    background-color: getColors("negro", 0);
+    color: getColors("blanco", 0);
+    border: 1px solid white;
+  }
+
+  &--big {
+    font-size: getFontSize("l");
+    padding: getPadding(4) getPadding(5);
+  }
+
+  // &:hover {
+  //   transform: scale(1.1);
+  //   background-color: getColors("verde", 3);
+  // }
+
+  // &--big {
+  //   font-size: getFontSize("xl");
+  //   padding: getPadding(6) getPadding(14);
+  //   width: 500px;
+  // }
+
+  // &--medium {
+  //   font-size: getFontSize("m");
+  //   padding: getPadding(3) getPadding(14);
+  //   width: 500px;
+  // }
+
+  // &--products {
+  //   font-size: getFontSize("s");
+  //   padding: getPadding(3) getPadding(4);
+  //   width: 250px;
+  //   font-family: getFontFamily("fuente3");
+  // }
+
+  // &--categoria {
+  //   font-size: getFontSize("s");
+  //   padding: getPadding(5) getPadding(7);
+  //   text-align: center;
+  //   font-family: getFontFamily("fuente3");
+  // }
+}

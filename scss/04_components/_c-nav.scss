@@ -1,0 +1,33 @@
+.c-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: getBackground("black");
+  padding: getPadding(7) getPadding(8);
+  color: getColors("blanco", 0);
+  font-size: getFontSize("2xl");
+
+  &__menu-izquierda {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: getGap(3);
+  }
+
+  &__logo {
+    width: 50px;
+  }
+
+  &__text {
+    text-decoration: none;
+    color: getColors("blanco", 0);
+    font-family: getFontFamily("fuente1");
+  }
+
+  &__menu-derecha {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: getGap(7);
+  }
+}

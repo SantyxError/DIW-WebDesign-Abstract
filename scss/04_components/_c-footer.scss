@@ -1,0 +1,68 @@
+.c-footer {
+  background-color: getBackground("black");
+  font-family: getFontFamily("fuente1");
+  color: getColors("blanco", 0);
+  padding: getPadding(10) getPadding(4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: getGap(15);
+
+  &__left-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: getGap(16);
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: getGap(6);
+  }
+
+  &__title {
+    font-weight: getFontWeight(8);
+    font-size: getFontSize("xl");
+
+    &--small {
+      font-size: getFontSize("m");
+    }
+
+    &--copyright {
+      font-size: getFontSize("l");
+    }
+  }
+
+  &__text {
+    font-size: getFontSize("l");
+
+    &--copyright {
+      font-size: getFontSize("xl");
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: getGap(6);
+    margin-top: getMargin(9);
+  }
+
+  &__right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: getPadding(16);
+    padding-left: getPadding(16);
+    gap: getGap(4);
+  }
+
+  &__logo {
+    width: 100px;
+  }
+}
